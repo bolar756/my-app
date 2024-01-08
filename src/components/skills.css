@@ -1,0 +1,36 @@
+.skills{
+    width: 100%;
+    position: relative;
+    top: 20px;
+    text-align: center;
+    max-height: max-content;
+}
+.skillintro{
+    text-transform: capitalize;
+    color: aliceblue;
+    line-height: 30px;
+}
+h1{
+    text-transform: uppercase;
+    color: #00abf0;
+    margin-bottom: 12px;
+}
+.skiset{
+    margin-top: -12vh;
+    margin-bottom: 20vh;
+}
+.skiset b{
+    width: 15%;
+    padding: 12px;
+    background: black;
+    height: 5vh;
+    color: #00abf0;
+    margin-left: 12px;
+    animation: scroll 2s linear infinite;
+}
+@keyframes scroll{
+    100%{
+        transform: translate(100% 100px);
+        background: chartreuse;
+    }
+}
