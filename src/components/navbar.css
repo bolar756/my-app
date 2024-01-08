@@ -1,42 +1,24 @@
-header{
-    width: 90%;
+.header{
     position: relative;
-    background-color: rgb(5, 2, 12);
-    height: 10vh;
-    justify-content: space-between;
-    display: flex;
-    padding: 12px;
-    top: 20px;
-    border-radius: 12px;
-    margin-left: 4%;
+    top: 0; left: 0;width: 100%; padding: 20px 10%;
+    background-color: transparent;
+    display: flex;justify-content: space-between;align-items: center;
+    z-index: 100;
+    border-bottom: 2px solid #00abf0;
 }
-nav a{
-    font-size: 1.3em;
-    background-color: blueviolet;
-    padding: 12px;
-    margin-left: 22px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: none;
-    border-radius: 12px;
+.logo{
+    font-size: 25px; color: #ededed;text-decoration: none;
+    font-weight: 700;position: relative;
 }
-nav{
-    justify-content: space-between;
-    margin-right: 30px;
-    padding: 15px;
+.logo::before{
+    content: '';position: absolute;top: 0;right: 0;width: 100%;
+    height: 100%;background: transparent;animation: showright 1s ease forward;
+    animation-delay: .4s;
 }
-#mes{
-    text-transform: capitalize;
-    padding: 12px;
-    font-size: 1.6em;
-    font-weight: 600;
-    color: white;
+.navbar a{
+    font-size: 18px; color: #ededed;text-decoration: none;
+    font-weight: 500;margin-left: 20px;transition: .3s;
 }
-#mes:hover{
-    color: blue;
-}
-nav a:hover{
-    background-color: chartreuse;
+.navbar a:hover  , .navbar a.active{
+    color: #00abf0;
 }

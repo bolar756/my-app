@@ -1,7 +1,8 @@
 import './App.css';
 import {Navbar} from './components/navabar';
-import {Banner} from './components/banner'
-import {Skill} from './components/skills'
+import {Banner} from './components/banner';
+import {Skill} from './components/skills';
+import {Contact} from './components/contact';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar/>
       <Banner/>
       <Skill/>
+      <Contact/>
     </div>
   );
 }

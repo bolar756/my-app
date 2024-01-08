@@ -5,23 +5,48 @@ import faceb from '../assets/img/flask.jpg'
 export const Skill = () =>{
 
     return (
-     <div className='skills'>
-        <h1>skills</h1>
+     <div className='skills' id='skill'>
+       <h1>skills</h1>
+        <hr/>
         <div class="skills-bx">
-            <b className='skillintro'><span>Lorem ipsum dolor sit amet, consectetur adipisicing
-                 elit. Aperiam fugit unde reiciendis vel facilis aut 
-                 numquam reprehenderit nemo a sint consequatur
-                  necessitatibus ipsa delectus laborum, amet ad 
-                  consectetur repudiandae omnis?
-                  </span>
-                  <span>Deleniti maiores explicabo doloribus architecto nisi
-                     distinctio, ex labore nostrum, ad iste sunt natus incidunt
-                      aut ea. Laborum odit, doloribus, asperiores repellat neque placeat tenetur officiis, eaque consectetur accusantium voluptas?</span>
-                  <span>Repellendus aut accusantium doloribus iure voluptate expe
-                    dita, asperiores minus, rerum amet recusandae laudantium aperiam cupiditate explicabo voluptatem, ratione dolores dolore voluptas fugit consectetur nostrum magni a?
-                 Consectetur doloribus eligendi quis!</span>
+            <b className='skillintro'>
+               <p> 
+               <b>
+                  Lorem ipsum dolor sit amet 
+                  consectetur adipisicing elit. Cumque 
+                  praesentium vel, inventore magni, tempora 
+                  animi similique vero corporis iure voluptates 
+                  eos aut sit minima 
+                  ad quae earum quisquam pariatur temporibus?
+                  </b>
+                  </p>
+               <p>
+               <b>Lorem, ipsum dolor sit amet consectetur
+                   adipisicing elit. Quaerat fuga sapiente ullam
+                    voluptatum libero voluptatibus commodi accusamus
+                     esse exercitationem nobis minus impedit debitis aspernatur illum, 
+                  tempore, tempora, quidem quae? Cumque.
+                  </b>
+                  </p>
+               <p>
+               <b>Lorem ipsum dolor sit amet consectetur 
+                  adipisicing elit. Cum repellendus natus iusto
+                   pariatur! Rem ut magni temporibus cum molestiae 
+                   ullam, vitae molestias facere! Officia doloremque
+                   quisquam suscipit voluptatum rerum sint?
+                  </b>
+                   </p>
+
+               <p>
+                  <b>Lorem ipsum dolor sit amet 
+                  consectetur, adipisicing elit. Voluptate,
+                   velit. Aliquam quis error cum quidem in? 
+                   Accusantium dignissimos tenetur distinctio quia 
+                   tempora ex, vel adipisci, 
+                  ea libero numquam ullam necessitatibus.
+                  </b></p>
                 </b>
-             <div class="skiset">
+             <div class="skiset" hidden>
                 <h1>i am good at </h1>
                  <div class="spent">
 

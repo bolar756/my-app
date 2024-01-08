@@ -1,6 +1,9 @@
 import { useState,useEffect } from 'react';
 import './banner.css';
-import hedr from '../assets/img/logo.png';
+import hedr from '../assets/img/logo-facebook.svg';
+import twitter from '../assets/img/logo-linkedin.svg';
+import facebook from '../assets/img/logo-instagram.svg'
+import github from '../assets/img/logo-github.svg';
 export const Banner  = () =>{
     const [loopnum, setloopnum] = useState(0)
     const [isDeleting, SetIsDeleting] = useState(false)
@@ -39,31 +42,37 @@ export const Banner  = () =>{
       }
     }
    return (
-    <div className="canner">
-    <h1>welcome to my portfolio</h1>
-    <h2> i am a <span className='wrap'>{text}</span></h2>
-    <div class="red">
-        <p className='menn'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure cupiditate maiores facere consequuntur porro neque, minima voluptates iste quidem harum nulla facilis unde in id veritatis, quisquam, magni eligendi!
-            Laboriosam vel minima dolor unde, voluptatum ab earum, illo inventore eos explicabo cum voluptatibus voluptate doloribus dolorem. Eaque, adipisci illum. Porro laborum ducimus, nemo consequatur totam asperiores quam similique enim.
-            Dolorem nesciunt, molestiae facilis, non quaerat unde tempore ratione nisi quisquam modi cum rem? Dolores nisi autem, veritatis provident aperiam, porro, animi officia repudiandae eum laudantium necessitatibus voluptatibus rerum neque.
-            <br/><button>Let's connect</button> <button> call me</button>
-            <br/><div class="navs" >
-                <a href="#">Facebook</a>
-                <a href="#">fiverr</a>
-                <a href="#">Upwork</a>
-                <a href="#">Instagram</a>
-                <a href="#">Gmail</a>
-            </div>
-        </p>
-        <p className='meds'>
-            <img src= {hedr}  alt="portfolio logo" className='mer'/>
-        </p>
-        </div>
+    <div class="e">   
+     <section class="home">
+    <div class="home-content">
+        <h1>hi i'm martins <span> i am a {text}</span></h1>
+        <p>Lorem ipsum, dolor sit amet consectetur 
+            adipisicing elit. Maiores, repudiandae 
+            cumque, laboriosam blanditiis nihil 
+            architecto unde ex repellendus expedita
+             corporis facilis, alias vel nesciunt dolorem ipsa.
+             Accusamus explicabo ipsa dolorem!
+             <br/>
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, dolorem 
+             cum recusandae repudiandae laboriosam vel tempore voluptatem corporis 
+             facilis deserunt iusto pariatur officiis dignissimos non 
+             similique ullam ipsam incidunt debitis</p>
+             <div class="btn-box">
+                <a href="#">Hire Me</a>
+                <a href="#">let's Talk</a>
+             </div>
     </div>
+    <div class="home-sci">
+        <a href=""><img src= {hedr} alt="facebook" width="20px"/></a>
+        <a href="https://www.linkedin.com/in/bolarinwa-martins-329496283/">
+          <img src={twitter} alt="" width="20px"/></a>
+        <a href=""><img src={facebook} alt="" width="20px"/></a>
+       <a href="https://github.com/bolar756/"><img src= {github} alt="github" width='20px'/></a>
+    </div>
+    <span class="home-imgHover"></span>
+</section>
+</div>
+
    )
-}
-function red(){
-    document.querySelector('p').innerText="dea"
 }
 export default Banner

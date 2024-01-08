@@ -1,36 +1,30 @@
 .skills{
-    width: 100%;
-    position: relative;
-    top: 20px;
-    text-align: center;
-    max-height: max-content;
-}
-.skillintro{
-    text-transform: capitalize;
-    color: aliceblue;
-    line-height: 30px;
+    width: 90%;
+    margin-left: 5%;
+    border: 3px solid #00afb0;
+    padding: 12px;
+    height: max-content;
+    margin-bottom: 30px;
 }
 h1{
-    text-transform: uppercase;
-    color: #00abf0;
-    margin-bottom: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
 }
-.skiset{
-    margin-top: -12vh;
-    margin-bottom: 20vh;
-}
-.skiset b{
-    width: 15%;
+.skills-bx p{
+    width: 90%;
+    margin-left: 4.5%;
+    height: min-content;
     padding: 12px;
-    background: black;
-    height: 5vh;
-    color: #00abf0;
-    margin-left: 12px;
-    animation: scroll 2s linear infinite;
+    font-size: 1.2em;
+    margin-top: 15px;
+    color: white;
+    line-height: 30px;
+    border: 2px solid #00afb0;
+    margin-bottom: 12px;
+    border-radius: 12px;
 }
-@keyframes scroll{
-    100%{
-        transform: translate(100% 100px);
-        background: chartreuse;
-    }
+hr{
+    margin-bottom: 12px;
 }
