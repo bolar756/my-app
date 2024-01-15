@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.home{
+#home{
+    padding: 200px 120px;
+    top: 300px;
     height: 100vh;
     display: flex;
     background: url('/src/assets/img/mear-removebg-preview-removebg-preview.png') no-repeat center;
@@ -15,13 +17,13 @@
 }
 .home-content{
     max-width: 600px;
-}
-.home-content h1{
-    font-size: 56px;
+}home-content h1{
+    font-size: 40px;
     font-weight: 700;
     text-transform: capitalize;
     line-height: 1.2;
     margin-top: 150px;
+    text-rendering: optimizeLegibility;
 }
 .home-content h3{
     font-size: 32px;
@@ -89,7 +91,7 @@ h1{
 }
 .home-sci{
     position: absolute;
-    bottom: 40px;
+    bottom: 140px;
     width: 170px;
     display: flex;
     justify-content: space-between;

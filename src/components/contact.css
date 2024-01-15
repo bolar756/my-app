@@ -7,15 +7,16 @@ form{
     width: 80%;
     margin-left: 10%;
     background: transparent;
-    border: 2px solid  chartreuse;
+    border: 2px solid  #00afb0;
     border-radius: 12px;
     max-height: max-content;
     min-height: 63vh;
+    text-align: center;
+    justify-content: center;
 }
 textarea{
     width: 80%;
     height: 6vh;
-    margin-left: 10%;
     padding: 25px;
     color: black;
     margin-top: 12px;
@@ -30,32 +31,39 @@ option{
     text-transform: uppercase;
     color: black;
 }
-input,select{
+input{
     width: 80%;
     height: 5vh;
-    margin-left: 10%;
     margin-top: 20px;
     margin-bottom: 5px;
     padding: 20px;
     border-radius: 12px;
-    outline: 0;
     font-weight: 600;
 }
-
+input:focus,select:focus,textarea:focus{
+    outline: 2px solid  #00afb0;
+}
 button{
     width: 80%;
     height: 6vh;
-    margin-left: 10%;
     margin-top: 12px;
     border-radius: 12px;
     padding: 23px;
     margin-bottom: 30px;
     font-size: 1.2em;
     font-weight: 600;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #00afb0;
     border: 0;
+    padding: 12px;
+    text-transform: uppercase;
+}
+select{
+    width: 80%;
+    height: 8vh;
+    justify-content: center;
+    border-radius: 12px;
+    margin-top: 12px;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 600;
 }

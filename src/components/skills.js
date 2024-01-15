@@ -5,7 +5,8 @@ import faceb from '../assets/img/flask.jpg'
 export const Skill = () =>{
 
     return (
-     <div className='skills' id='skill'>
+      <section id='skills'>
+     <div className='skills' >
        <h1>skills</h1>
         <hr/>
         <div class="skills-bx">
@@ -62,6 +63,7 @@ export const Skill = () =>{
                 </div>    
         </div>
      </div>
+     </section>
     );
 }
 

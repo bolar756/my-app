@@ -41,9 +41,8 @@ export const Banner  = () =>{
         setDelta(500)
       }
     }
-   return (
-    <div class="e">   
-     <section class="home">
+   return (  
+     <section class="home" id="home">
     <div class="home-content">
         <h1>hi i'm martins <span> i am a {text}</span></h1>
         <p>Lorem ipsum, dolor sit amet consectetur 
@@ -53,25 +52,23 @@ export const Banner  = () =>{
              corporis facilis, alias vel nesciunt dolorem ipsa.
              Accusamus explicabo ipsa dolorem!
              <br/>
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, dolorem 
-             cum recusandae repudiandae laboriosam vel tempore voluptatem corporis 
-             facilis deserunt iusto pariatur officiis dignissimos non 
-             similique ullam ipsam incidunt debitis</p>
+             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Suscipit, assumenda necessitatibus. Omnis necessitatibus
+             </p>
              <div class="btn-box">
-                <a href="#">Hire Me</a>
+                <a href="#contact">Hire Me</a>
                 <a href="#">let's Talk</a>
              </div>
-    </div>
-    <div class="home-sci">
+             <div class="home-sci">
         <a href=""><img src= {hedr} alt="facebook" width="20px"/></a>
         <a href="https://www.linkedin.com/in/bolarinwa-martins-329496283/">
           <img src={twitter} alt="" width="20px"/></a>
         <a href=""><img src={facebook} alt="" width="20px"/></a>
        <a href="https://github.com/bolar756/"><img src= {github} alt="github" width='20px'/></a>
     </div>
+    </div>
     <span class="home-imgHover"></span>
 </section>
-</div>
 
    )
 }
