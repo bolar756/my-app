@@ -8,6 +8,8 @@
     <meta name="description" content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="">
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -38,4 +40,14 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    let menu = document.querySelector('#menu');
+    let banner = document.querySelector('.home');
+    menu.onclick = () => {
+    banner.classList.toggle('none')
+    document.querySelector('.navbar').classList.toggle('none')
+    document.querySelector('bx').classList.toggle('bx-menu')
+    document.querySelector('bx').classList.toggle('bx-x')
+  };
+  </script>
 </html>
