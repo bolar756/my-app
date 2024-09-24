@@ -1,0 +1,83 @@
+.hero__banner{
+    min-height: 80vh;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+.hero span{
+    background: blue;
+    padding: 7px;
+}
+.hero{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    min-height: 40vh;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    line-height: 30px;
+    align-items: center;
+}
+.hero h1{
+    padding: 0;
+    line-height: 35px;
+}
+.hero h1 , .hero h3{
+    text-transform: capitalize;
+    text-align: left;
+    width: 50%;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    width: 50%;
+    margin-top: 30px;
+}
+.buttons button , .buttons a{
+    border: 2px solid white;
+    height: 70px;
+    color: white;
+    border: 2px solid white;
+    text-align: left;
+    display: flex;
+    width: 30%;
+    align-items: center;
+    background: transparent;
+   display: flex;
+   justify-content: center;
+   transition: .3s ease-in;
+}
+.buttons button:hover , .buttons a:hover{
+    background: white;
+    color: black;
+    border-radius: 12px;
+}
+.contact_icons{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 50%;
+    margin-top: 40px;
+}
+.contact_icons i{
+    font-size: 30px;
+    cursor: pointer;
+}
+@media (max-width:800px) {
+   .hero h1 , .hero h3{
+    width: 100%;
+    padding: 20px;
+   }   
+   .buttons , .contact_icons{
+    width: 100%;
+    padding: 20px;
+   }
+}

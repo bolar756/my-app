@@ -1,0 +1,9 @@
+footer{
+    height: 10vh;
+    background: white;
+    color:  black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}

@@ -1,4 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Guerrilla&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
 body{
-  background:  #001627;
-  overflow-x: hidden;
+  width: 100%;
+  padding: 0;
+  min-height: 100vh;
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  background: #111928;
 }

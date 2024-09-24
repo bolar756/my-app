@@ -1,36 +1,58 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 #home{
-    padding: 200px 120px;
-    top: 300px;
-    height: 100vh;
+    margin-top: 30px;
+    min-height: 100vh;
     display: flex;
-    background: url('/src/assets/img/mear-removebg-preview-removebg-preview.png') no-repeat center;
-    background-position: center;
-    background-position-x: right;
     align-items: center;
-    padding: 0 10%;
     width: 100%;
+    justify-content: space-between;
+    gap: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(5px);
+   border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: white;
 }
-.home-content{
-    max-width: 600px;
-}home-content h1{
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: capitalize;
-    line-height: 1.2;
-    margin-top: 150px;
-    text-rendering: optimizeLegibility;
+.home-content {
+  width: 45%;
+  height: max-content;
+  justify-content: center;
+  padding: 20px;
+  min-height: 20vh;
+  text-align: left;
+  margin-top: 80px;
+  align-items: center;
 }
-.home-content h3{
-    font-size: 32px;
-    font-weight: 700;
-    color: #00abf0;
-    text-transform: capitalize;
+.img img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 4px 6px black;
+    height: 80vh;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+     border-radius: 12px;
+     border: 1px solid rgba(255, 255, 255, 0.125);
+     color: white;
+     border-radius: 50%;
+     animation: martins 3s linear infinite;
+     margin-right: 30px;
+}
+@keyframes martins {
+    0%{
+        transform: translateY(-60px);
+    }
+    100%{
+        transform: translateY(60px);
+    }
+}
+.home-content h1{
+    min-height: 60%;
+    text-align: left;
 }
 .home-content p{
     font-size: 16px;
@@ -62,9 +84,6 @@
     z-index: 1;
     overflow: hidden;
     transition: .5s;
-}
-h1{
-    color: #00abf0;
 }
 .btn-box a:nth-child(2){
     background: transparent;
@@ -131,15 +150,6 @@ h1{
 .home-sci a:hover::before{
     width: 100%;
 }
-.home-imgHover{
-    position: absolute;
-    top: 0;
-    right: 30px;
-    width: 500px;
-    height: 100%;
-    background: transparent;
-    transition: 3s;
-}
 @keyframes showright{
     100%{
         width: 0;
@@ -147,13 +157,6 @@ h1{
 }
 .home-content p{
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.2em;
     font-weight: 500;
-}
-hr{
-    width: 98;
-    padding: 2px;
-    background: #00abf0;
-    border: 0;
 }

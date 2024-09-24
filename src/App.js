@@ -1,16 +1,31 @@
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 import {Navbar} from './components/navabar';
-import {Banner} from './components/banner';
-import {Skill} from './components/skills';
-import {Contact} from './components/contact';
+import {Footer} from './components/footer';
+
+
+import Home from './pages/home'
+import Contact from './pages/contact'
+import About from './pages/about'
+import Portfolio from './pages/portfolio'
 
 function App() {
   return (
     <div className="App">
+      <Router>
       <Navbar/>
-      <Banner/>
-      <Skill/>
-      <Contact/>
+      <Routes >
+      <Route exact path="/" element={<Home />} />
+      < Route path="/contact" element={<Contact />} />
+      < Route path="/portfolio" element={<Portfolio />} />
+      < Route path="/about" element={<About />} />
+      </Routes>
+      <Footer/>
+      </Router>
     </div>
   );
 }
